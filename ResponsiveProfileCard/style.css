@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* imported the seim-bold(600) Poppins font from google fonts */
+*{
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* used it for the entire profile card */
+}
+
+/* body styling */
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+/* profile-card styling  */
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    /* pointer events none for child elements */
+    padding: 25px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.profile-card::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 36%;
+width: 100%;
+border-radius: 20px 20px 0 0;
+background-color:#333;
+
+}
+
+
+/* profile image styling */
+.image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.image.DP{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid #4070f4;
+}
+/* profile-card texts */
+.profile-card .profile-texts{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.profile-texts .name{
+    font-size: 15px;
+    font-weight:bolder;
+
+}
+.profile-texts .job{
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+}
+.profile-card .social-media{
+    display: flex;
+    align-items: center;
+}
+.social-media .social-link{
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    border-radius: 50%;
+    display: flex;
+    background-color: #333;
+    align-items: center;
+    color: #fff;
+    justify-content:center ;
+    text-decoration: none;
+}
+.social-media{
+    margin-top: 15px;
+}
+
+/* profile button and social links */
+.button{
+   margin-top: 25px;
+   padding: 3px 10px;
+   color: white;
+    align-items: center;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: 0 5px 10px;
+    transition: all .2s ease-out;
+}
+.social-link:hover{
+    transform: scale(1.1);
+    transition: transform.2s;
+}
+.button:hover{
+    transform: scale(1.02);
+    transition: transform.2s;
+    cursor: pointer;
+}
+.share-profile{
+    margin-top: 5px;
+}
+
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: #333;
+    border-right: 2px solid #e7e7e7;
+}
+.data i{
+font-size: 18px;
+margin-right: 10px;
+}
+.data:last-child{
+    border-right: none;
+}
