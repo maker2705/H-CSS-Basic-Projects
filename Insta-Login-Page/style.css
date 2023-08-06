@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Darker Grotesque', sans-serif;
+}
+.logo a{
+    font-family: 'Grand Hotel', cursive;
+    color: #262626;
+    font-size: 3.3rem;
+    text-decoration: none;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.login-credentials {
+    margin-top: 20%; /* Adjust this value as needed */
+    position: relative;
+    
+  }
+  
+#main-div h1{
+    position: relative;
+    top: 30px;
+    font-weight: 150;
+    left: 50%;
+    transform: translate(-50%);
+}
+#main-div{
+border: 1px solid rgba(0, 0, 0, .2);
+width: 350px;
+position: relative;
+margin-top: 5%;
+left: 50%;
+height: 400px;
+transform: translate(-50%);
+}
+#username{
+    margin-top: 70px;
+    /* border-radius: 2px; */
+    width: 80%;
+    height: 35px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+#password{
+    margin-top: 5px;
+    /* border-radius: 2px; */
+    height: 35px;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+#login-button{
+    margin-top: 15px;
+    background-color: #0095f6;
+    height: 31px;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    font-size: large;
+    color: white;
+    transform: translate(-50%);
+    border-style:none ;
+    border-radius: 10px;
+}
+#login-button:hover{
+  background-color: #1877F2;
+  cursor: pointer;
+}
+#username:focus, #password:focus {
+    outline: none;
+  }
+  #secondary-div{
+    border: 1px solid rgba(0, 0, 0, .2);
+    width: 350px;
+    position: relative;
+    margin-top: 1%;
+    left: 50%;
+    height: 65px;
+    transform: translate(-50%);
+  }
+#secondary-div span:first-child{  
+  display: inline-block;
+  font-size: large;
+  margin-top: 5%;
+  margin-left: 21%;
+}
+  
+  #sign-up a{
+    text-decoration: none;
+    margin-left: 2px;
+    font-size: large;
+    color: #0095f6;
+  }
+
+  #fb-button{
+    border: none;
+    background-color: transparent;
+    color: #385185;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    font-size: large;
+  }
+  #fb-button:hover{
+    cursor: pointer;
+  }
+  .line-section {
+    position: relative;
+    text-align: center;
+  }
+  
+  .line {
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    width: 80%; 
+    margin: 25px auto;
+  }
+  
+  .text {
+    position: absolute;
+    color: #737373;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0 10px;
+  }
+  #forgot-password{
+   display: flex;
+   justify-content: center;
+   text-decoration: none;
+   color: #00376b;
+  }
+  #get-app{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .img-link img{
+  width:130px;
+  }
+  #img-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  #img-container a img:first-child{
+    position: inherit;
+    margin-right: 5px;
+    height: 40px;
+  }
